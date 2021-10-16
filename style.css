@@ -1,0 +1,27 @@
+.logo{
+    transition: all .5s ease;
+}
+
+.logo p{
+    opacity: 0;
+}
+
+.name{
+    font-size: 300px;
+    color: brown;
+    text-align: center;
+    transform: scale(0);
+    animation: grow .5s linear 1 .5s forwards;
+}
+
+@keyframes grow{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
